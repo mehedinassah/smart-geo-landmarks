@@ -1,0 +1,23 @@
+# Gradle files
+.gradle/
+build/
+*.gradle.lock
+
+# Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+.DS_Store
+
+# Build output
+local.properties
+app/build/
+
+# IDE
+.vscode/
+*.swp
+*.swo
+
+# Secrets
+secrets.properties

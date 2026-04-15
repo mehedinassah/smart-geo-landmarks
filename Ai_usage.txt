@@ -1,0 +1,58 @@
+================================================================================
+  AI USAGE JUSTIFICATION
+  CSE 489 Lab Exam — Smart Geo-Tagged Landmarks
+================================================================================
+
+AI Tool Used: Claude (Anthropic) — claude.ai
+
+--------------------------------------------------------------------------------
+HOW AI WAS USED
+--------------------------------------------------------------------------------
+
+1. ARCHITECTURE PLANNING
+   - Used AI to help decide MVVM + Repository pattern for this project.
+   - AI explained the responsibility boundaries between ViewModel, Repository,
+     and data sources (Room + Retrofit).
+   - Final architecture decisions and implementation were written and understood
+     by the student.
+
+2. BOILERPLATE GENERATION
+   - Room entity/DAO definitions: AI generated the initial structure; student
+     reviewed and adjusted field names to match the actual API response.
+   - Retrofit interface: AI provided the @Multipart annotation pattern for file
+     uploads. Student verified this against the API spec and the lab's warning
+     about using form-data (not raw JSON) for image upload.
+
+3. DEBUGGING ASSISTANCE
+   - Student encountered issues with the multipart upload (file was not being
+     received by server). AI explained why using @Body with JSON breaks file
+     uploads, and confirmed that @Multipart + MultipartBody.Part is required.
+   - AI helped diagnose why FusedLocationProviderClient.lastLocation can return
+     null and suggested requesting a fresh location update as a fallback.
+
+4. LAYOUT XML
+   - AI generated initial XML layout structure for item cards and fragments.
+   - Student customised colors, spacing, and component choices.
+
+5. WORKMANAGER SYNC
+   - AI provided the CoroutineWorker pattern for background sync.
+   - Student integrated it with Room's pending_visits table and added
+     per-record retry logic.
+
+--------------------------------------------------------------------------------
+WHAT WAS NOT AI-GENERATED
+--------------------------------------------------------------------------------
+- Core business logic decisions (score thresholds, filter/sort UX flow)
+- API key and endpoint configuration
+- Understanding of why multipart is required (studied from lab exam spec)
+- Git commit history and incremental development
+- Testing on device/emulator and debugging runtime issues
+
+--------------------------------------------------------------------------------
+DECLARATION
+--------------------------------------------------------------------------------
+AI was used as a learning assistant and code accelerator — not as a replacement
+for understanding. All code in this repository has been read, understood, and
+verified by the student before submission.
+
+================================================================================

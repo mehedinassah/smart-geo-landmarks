@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxWidth="550dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/iv_landmark"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:scaleType="centerCrop"
+            android:background="@color/image_placeholder_bg"
+            android:contentDescription="Landmark image"
+            app:srcCompat="@drawable/ic_landmark_placeholder" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Landmark Title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:spacing="16dp">
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Score: 0.0"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tv_visits"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Visits: 0"
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp"
+            android:gravity="end"
+            android:spacing="8dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_close"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_delete"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:textColor="@color/error_color"
+                app:strokeColor="@color/error_color" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_visit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visit" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

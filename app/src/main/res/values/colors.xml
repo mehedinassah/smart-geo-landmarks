@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryDark">#1565C0</color>
+    <color name="colorAccent">#42A5F5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="background">#F5F5F5</color>
+    <color name="card_stroke">#E0E0E0</color>
+    <color name="text_secondary">#757575</color>
+    <color name="image_placeholder_bg">#EEEEEE</color>
+
+    <!-- Score indicator colors -->
+    <color name="score_low">#F44336</color>
+    <color name="score_medium">#FF9800</color>
+    <color name="score_high">#4CAF50</color>
+
+    <color name="error_color">#B00020</color>
+</resources>
